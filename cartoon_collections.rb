@@ -6,7 +6,7 @@ end
 
 def list_dwarves(array)
   position = 1
-  array.each do |character|
+  array.each_with_index do |character|
     puts "#{position}. Hello #{character}!"
     position+=1
   end
